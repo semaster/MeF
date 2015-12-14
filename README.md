@@ -1,4 +1,4 @@
-*Mere PHP framework*
+#Mere PHP framework
 
 Structure of mere php framework that follows architectural pattern Model–View–Controller (MVC).
 
