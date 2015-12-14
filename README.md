@@ -4,12 +4,12 @@ Structure of mere php framework that follows architectural pattern Modelâ€“Viewâ
 
 You will be able to start developing Web applications the easy way right now!
 
-** It includes "from the box" :**
+# It includes "from the box" :
 
 * Authentication based on [Password Hashing Functions](http://php.net/manual/en/ref.password.php),
 * Datebase class (singleton) uses PDO driver,
 * Simple routing
 
-** Requirements**
+# Requirements
 -   PHP 5 >= 5.5.0
 -   MySQL >= 5.1
