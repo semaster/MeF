@@ -6,7 +6,7 @@ class control_index extends core\Controller {
 		if( is_readable($model_path) ) { include_once($model_path); }
 		$data = array('pageTitle'	=> 'your site Main');
 
-		$this->view->generate('_layout', $this->view_name, $this->initmsg);
+		$this->view->generate('_layout', $this->view_name, $data);
 	}
 }
 
