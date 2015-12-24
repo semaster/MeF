@@ -8,7 +8,7 @@ class Router {
 	public function __construct(){}
 
 	static function run()	{
-		$routes = explode('/', $_SERVER['QUERY_STRING']);
+		$routes = explode('/', $_SERVER['REQUEST_URI']);
 
 		if ( $control_name = filter_var($routes[1], FILTER_VALIDATE_REGEXP,array("options"=>array("regexp"=>"/^([a-zA-Z0-9])+$/"))) ) {	
 			self::$control = 'control_'.$control_name;
