@@ -31,7 +31,7 @@ class wxod extends core\Model {
 				if ($stm = $dblink->prepare("INSERT INTO ".TABLE_USERS." (email,pass,regdate) VALUES (?,?,NOW())")) {
 					$stm->execute(array($usernew,$hash));
 					if ($stm->errorInfo()[1] == 0) 		$_SESSION['AUTH'] = $usernew;
-					if ($stm->errorInfo()[1] == 1062) 	$mesg_rx = "email is already in use" ;
+					if ($stm->errorInfo()[1] == 1062) 	$mesg = "email is already in use" ;
 					$stm = NULL;
 				} 
 
